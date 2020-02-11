@@ -11,7 +11,6 @@ const styles = {
     textAlign: 'center',
     color: '#B25B4D',
     fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif'
-    
   }
 }
 

@@ -10,8 +10,6 @@ const Styles = {
     alignItems: 'center'  
 }
     
-
-
 export default class Recipes extends React.Component {
   constructor(props) {
       super(props)
@@ -42,22 +40,22 @@ export default class Recipes extends React.Component {
     }
     
     render() {
-        const {loading} = this.state;
-        let recipes = this.state.recipes.recipes;
-        return (
-          <section style={Styles}>
-            {
-              loading ? <Loading /> : recipes.map(item => (
-                <Card
-                  title={item.title}
-                  image={item.image}
-                  ingredients={item.extendedIngredients}
-                  description={item.description}
-                  id={item.id}
-                />
-              ))
-            }
-          </section>
-        )
+      const {loading} = this.state;
+      let recipes = this.state.recipes.recipes;
+      return (
+        <section style={Styles}>
+          {
+            loading ? <Loading /> : recipes.map(item => (
+              <Card
+                title={item.title}
+                image={item.image}
+                ingredients={item.extendedIngredients}
+                description={item.description}
+                id={item.id}
+              />
+            ))
+          }
+        </section>
+      )
     }
 }
