@@ -11,14 +11,10 @@ const Styles = {
 }
     
 export default class Recipes extends React.Component {
-  constructor(props) {
-      super(props)
-      this.state = {
-          recipes: [],
-          loading: true
-      }
+ state = {
+    recipes: [],
+    loading: true
   }
-
   componentDidMount() {
     fetch("https://api.spoonacular.com/recipes/random?&number=5&apiKey=89737e3cba4d4d35aeff1ea3afbc3f27")
       .then(res => res.json())
