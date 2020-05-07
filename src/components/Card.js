@@ -11,7 +11,8 @@ const StylesDiv = {
 	webkitBoxShadow: '7px 10px 24px 9px rgba(0, 0, 0, 0.56)',
 	mozBoxShadow: '7px 10px 24px 9px rgba(0, 0, 0, 0.56)',
 	boxShadow: '7px 10px 24px 9px rgba(0, 0, 0, 0.56)',
-	fontFamily: 'Arial'  
+	fontFamily: 'Arial', 
+	minWidth: '350px'
 }
 
 const StylesH3 = {

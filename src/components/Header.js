@@ -1,16 +1,25 @@
 
 import React from 'react'
+import styled from 'styled-components'
 
-const linkStyle = {
-  marginLeft: '1.5rem',
-  fontSize: '3rem',
-  color: '#B25B4D'
-};
+
+const LinkStyle = styled.div `
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+
+  h1 {
+    font-size: 3rem;
+    color: #B25B4D;
+  }
+`
 
 const Header = () => (
-  <div>
-    <h1 style={linkStyle}>dishFit</h1>
-  </div>
+  <LinkStyle>
+    <h1>dish.fit</h1>
+  </LinkStyle>
 );
 
 export default Header;
